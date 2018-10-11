@@ -38,6 +38,12 @@ $ yarn install
 
 Do ensure that you have two separate terminals opened on your machine. One of them will be used to start the Symfony app while the other will keep the frontend running.
 
+### Include Auth0 App credentials
+
+Navigate to `./assets/js/utils/Auth.js` file and replace the `<DOMAIN>` and `<CLIENT_ID>` placeholder
+with the appropriate credentials as obtained for Auth0 dashboard
+
+
 ### Start the application
 
 #### Backend ( Server )
