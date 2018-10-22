@@ -12,22 +12,6 @@ class DefaultController extends AbstractController
      */
     public function index()
     {
-        return $this->render('default/index.html.twig', [
-            'controller_name' => 'DefaultController',
-            'AUTH0_DOMAIN' => getenv('AUTH0_DOMAIN'),
-            'AUTH0_CLIENT_ID' => getenv('AUTH0_CLIENT_ID')
-        ]);
+        return $this->render('default/index.html.twig');
     }
-
-//    /**
-//     * @Route("/api/auth/callback", name="authCallback")
-//     */
-//    public function callback()
-//    {
-//        return $this->render('default/index.html.twig', [
-//            'controller_name' => 'DefaultController',
-//            'AUTH0_DOMAIN' => getenv('AUTH0_DOMAIN'),
-//            'AUTH0_CLIENT_ID' => getenv('AUTH0_CLIENT_ID')
-//        ]);
-//    }
 }
