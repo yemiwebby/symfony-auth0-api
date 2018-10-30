@@ -21,13 +21,6 @@ class WebServiceUserProvider implements JWTUserProviderInterface
         $data = ['sub' => $jwt->sub];
         $roles = array();
         $roles[] = 'ROLE_OAUTH_AUTHENTICATED';
-        if (isset($jwt->scope)) {
-            $scopes = explode(' ', $jwt->scope);
-
-            if (array_search('read:messages', $scopes) !== false) {
-                $roles[] = 'ROLE_OAUTH_READER';
-            }
-        }
 
         return new WebServiceUser($data, $roles);
     }
