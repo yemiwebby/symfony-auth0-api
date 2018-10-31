@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom';
 import { Card, CardText, CardBody,CardTitle, Container,Row, Col, Badge  } from 'reactstrap';
 import axios from 'axios';
 
-class FetchResource extends Component {
+class FetchResourcePublic extends Component {
 
     constructor(props) {
         super(props);
@@ -61,4 +61,4 @@ class FetchResource extends Component {
         )
     }
 }
-export default withRouter(FetchResource);
+export default withRouter(FetchResourcePublic);

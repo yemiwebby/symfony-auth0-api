@@ -5,7 +5,7 @@ import axios from 'axios';
 import auth0Client from '../utils/Auth';
 
 
-class FetchResource extends Component {
+class FetchResourcePrivate extends Component {
 
     constructor(props) {
         super(props);
@@ -74,4 +74,4 @@ class FetchResource extends Component {
     }
 }
 
-export default withRouter(FetchResource);
+export default withRouter(FetchResourcePrivate);
