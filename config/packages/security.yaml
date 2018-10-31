@@ -1,8 +1,8 @@
 security:
     providers:
-        a0:
+        web_service_user_provider:
           id:
-            a0_user_provider
+            web_service_user_provider
 
 
     firewalls:
@@ -11,7 +11,7 @@ security:
             stateless: true
             simple_preauth:
                 authenticator: jwt_auth.jwt_authenticator
-            provider: a0
+            provider: web_service_user_provider
 
     # Easy way to control access for large sections of your site
     access_control:
